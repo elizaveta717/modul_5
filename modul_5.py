@@ -107,7 +107,7 @@ class SecurityApp:
         tk.Button(button_frame, text='Выйти', command=self.show_login_screen).grid(row=0, column=2, padx=10)
 
     def load_photo(self):
-        filepath = filedialog.askopenfilename(title='Выберите фотографию', filetypes=[('Изображения', '*.jpg *.jpeg *.png')])
+        filepath = filedialog.askopenfilename(title='Выберите фотографию', filetypes=[('Изображения', '*.jpg *.png')])
 
         if not filepath:
             return
